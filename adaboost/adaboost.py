@@ -34,10 +34,14 @@ class AdaBoost:
         assert len(self.alphas) == len(self.classifiers)
         
     def __call__(self, x):
-        preds = np.array([np.array([0 for _ in range(self.M)]) for _ in range(len(x))])
-        for i in range(self.M):
-            cur_pred = self.alphas[i] * self.classifiers[i].predict(x)
-            preds[:, i] = cur_pred
+        preds = np.zeros(len(x))
+        for j in range(len(x)):
+            pred = np.sign(
+                np.sum(
+                    [self.alphas[i] * self.classifiers[i].predict(x) for i in range(self.M)]
+                )
+            ).astype(int)
+            
+            preds[j] = pred
         
-        final_pred = np.sign(preds.T.sum(0)).astype(int)
-        return final_pred
+        return preds

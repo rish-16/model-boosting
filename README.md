@@ -7,4 +7,4 @@ This repo is a collection of popular Boosting methods implemented from scratch u
 ## Contents
 The following boosting methods have been implemented:
 
-- AdaBoost [`adaboost`]()
+- AdaBoost [`adaboost`](https://github.com/rish-16/model-boosting/tree/main/adaboost)

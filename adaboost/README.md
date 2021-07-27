@@ -1,5 +1,4 @@
 # AdaBoost
-
 Implementation of Adaptive Boosting that weights weak learners to provide a consensus-based prediction.
 
 ## Performance

@@ -7,5 +7,5 @@ This repo is a collection of popular Boosting methods implemented from scratch u
 ## Contents
 The following boosting methods have been implemented:
 
-- AdaBoost [`adaboost`](https://github.com/rish-16/model-boosting/tree/main/adaboost)
+- Discrete AdaBoost [`adaboost`](https://github.com/rish-16/model-boosting/tree/main/adaboost)
 - Gradient Boosting [`gradboost`](https://github.com/rish-16/model-boosting/tree/main/gradboost)
